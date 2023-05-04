@@ -71,6 +71,7 @@ X.Dropdown({
           }
 
         game:GetService("ReplicatedStorage").Remotes.Server.Initiate_Server:FireServer(unpack(args))
+	end
     end,
     Options = {"Punho", "Espada"}
 })
