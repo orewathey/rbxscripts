@@ -1,4 +1,3 @@
-print("LuaHHub was Executed!")
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local UI = Material.Load({
