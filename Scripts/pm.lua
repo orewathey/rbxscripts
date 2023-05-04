@@ -112,7 +112,7 @@ X.Button({
     Text = "Atualizar Mobs",
     Callback = function()
     table.clear(NPCS)
-    for i, v in pairs(game:GetService("Workspace").EnemyNPCs:GetDescendants()) do
+    for i, v in pairs(game:GetService("Workspace").World.Live.Mobs:GetDescendants()) do
            if v:IsA "Model" and v:FindFirstChild("HumanoidRootPart") then
                if not table.find(NPCS, tostring(v)) then
                     table.insert(NPCS, tostring(v))
