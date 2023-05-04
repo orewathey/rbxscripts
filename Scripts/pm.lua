@@ -8,7 +8,7 @@ for i, v in pairs(game:GetService("Workspace").World.Live.Mobs:GetDescendants())
     end
 end
 
-local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
+local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/yupbr/rbxscripts/main/UI%20Libraries/MaterialLua/Module.lua"))()
 
 local UI = Material.Load({
     Title = "LuaHHub | Project Mugetsu",
