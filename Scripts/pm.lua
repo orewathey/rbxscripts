@@ -1,3 +1,13 @@
+local NPCS = {}
+
+for i, v in pairs(game:GetService("Workspace").World.Live.Mobs:GetDescendants()) do
+    if v:IsA "Model" and v:FindFirstChild("HumanoidRootPart") then
+        if not table.find(NPCS, v.Name) then
+            table.insert(NPCS, v.Name)
+        end
+    end
+end
+
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/Kinlei/MaterialLua/master/Module.lua"))()
 
 local UI = Material.Load({
@@ -18,20 +28,6 @@ local UI = Material.Load({
         Content = Color3.fromRGB(0,0,0),
     }
 })
-
-UI.Banner({
-    Text = "Obrigado por usar LuaHHub! <3"
-})
-
-local NPCS = {}
-
-for i, v in pairs(game:GetService("Workspace").World.Live.Mobs:GetDescendants()) do
-    if v:IsA "Model" and v:FindFirstChild("HumanoidRootPart") then
-        if not table.find(NPCS, v.Name) then
-            table.insert(NPCS, v.Name)
-        end
-    end
-end
 
 function getNPC()
     local dist, thing = math.huge
