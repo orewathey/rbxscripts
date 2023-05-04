@@ -29,20 +29,6 @@ local UI = Material.Load({
     }
 })
 
-function getNPC()
-    local dist, thing = math.huge
-    for i, v in pairs(game:GetService("Workspace").World.Live.Mobs:GetDescendants()) do
-        if v:IsA "Model" and v:FindFirstChild("HumanoidRootPart") and v.Name == mobname then
-            local mag = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).magnitude
-            if mag < dist then
-                dist = mag
-                thing = v
-            end
-        end
-    end
-    return thing
-end
-
 local X = UI.New({
     Title = "Principal"
 })
@@ -155,3 +141,16 @@ X.Toggle({
     Enabled = false
 })
 
+function getNPC()
+    local dist, thing = math.huge
+    for i, v in pairs(game:GetService("Workspace").World.Live.Mobs:GetDescendants()) do
+        if v:IsA "Model" and v:FindFirstChild("HumanoidRootPart") and v.Name == mobname then
+            local mag = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - v.HumanoidRootPart.Position).magnitude
+            if mag < dist then
+                dist = mag
+                thing = v
+            end
+        end
+    end
+    return thing
+end
