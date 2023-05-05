@@ -54,6 +54,23 @@ X.Toggle({
     Enabled = false
 })
 
+X.Toggle({
+    Text = "Auto Eat (Hallow)",
+    Callback = function(Value)
+        a = Value
+        while a do task.wait()
+            	local partsEat = game:GetService("Workspace").World.Visuals
+		for i, v in ipairs(partsEat:GetChildren()) do
+			local prompt = v:FindFirstChild("Eat_Part")
+			if prompt and prompt:IsA("ProximityPrompt") then
+				fireproximityprompt(prompt)
+				task.wait(1)
+			end
+        	end
+	  end,
+    Enabled = false
+})
+
 X.Dropdown({
     Text = "Selecionar Arma",
     Callback = function(Value)
