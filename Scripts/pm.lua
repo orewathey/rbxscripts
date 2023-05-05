@@ -66,8 +66,9 @@ X.Toggle({
 				fireproximityprompt(prompt)
 				task.wait(1)
 			end
-        	end
-	  end,
+		end
+        end
+end,
     Enabled = false
 })
 
