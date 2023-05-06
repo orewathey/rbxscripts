@@ -149,7 +149,7 @@ X.Toggle({
     Text = "Auto Mob",
     Callback = function(Value)
         b = Value
-        while b do task.wait(9.50)
+        while b do task.wait(0.1)
                     pcall(function()
 	                  if direction == "Atrás" then
 	                    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = getNPC().HumanoidRootPart.CFrame * CFrame.new(0,0,-8)
