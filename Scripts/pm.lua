@@ -59,7 +59,7 @@ X.Toggle({
     Callback = function(Value)
         a = Value
         while a do task.wait()
-            	local partsEat = game:GetService("Workspace").World.Visuals
+            local partsEat = game:GetService("Workspace").World.Visuals
 		for i, v in ipairs(partsEat:GetChildren()) do
 			local prompt = v:FindFirstChild("Eat_Part")
 			if prompt and prompt:IsA("ProximityPrompt") then
@@ -68,7 +68,7 @@ X.Toggle({
 			end
 		end
         end
-end,
+    end,
     Enabled = false
 })
 
