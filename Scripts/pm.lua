@@ -31,13 +31,18 @@ local UI = Material.Load({
     }
 })
 
---  UI.Banner({
---     Text = "Obrigado por usar Lunar Hub <3"
--- })
-
 local X = UI.New({
     Title = "Principal"
 })
+
+local Y = UI.New({
+    Title = "Misc"
+})
+
+local Z = UI.New({
+    Title = "Créditos"
+})
+
 
 X.Toggle({
     Text = "Auto Meditar",
@@ -124,16 +129,6 @@ local ii = X.Dropdown({
         getgenv().mobname = Value
     end,
     Options = NPCS
-})
-
-X.Slider({
-    Text = "Distância de Farm",
-    Callback = function(Value)
-        print("Test")
-    end,
-    Min = 1,
-    Max = 10,
-    Precision = 1
 })
 
 X.Dropdown({
