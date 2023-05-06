@@ -1,3 +1,5 @@
+print("Lunar Hub iniciado!")
+
 local NPCS = {}
 
 for i, v in pairs(game:GetService("Workspace").World.Live.Mobs:GetDescendants()) do
@@ -122,16 +124,6 @@ local ii = X.Dropdown({
         getgenv().mobname = Value
     end,
     Options = NPCS
-})
-
-X.Slider({
-    Text = "Distância de Farm",
-    Callback = function(Value)
-        print("Test")
-    end,
-    Min = 1,
-    Max = 10,
-    Precision = 1
 })
 
 X.Dropdown({
