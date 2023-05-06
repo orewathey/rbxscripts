@@ -31,9 +31,9 @@ local UI = Material.Load({
     }
 })
 
-UI.Banner({
-    Text = "Obrigado por usar Lunar Hub <3"
-})
+--  UI.Banner({
+--     Text = "Obrigado por usar Lunar Hub <3"
+-- })
 
 local X = UI.New({
     Title = "Principal"
