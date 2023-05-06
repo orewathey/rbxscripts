@@ -11,7 +11,7 @@ end
 local Material = loadstring(game:HttpGet("https://raw.githubusercontent.com/yupbr/rbxscripts/main/UI%20Libraries/MaterialLua/Module.lua"))()
 
 local UI = Material.Load({
-    Title = "LuaHHub | Project Mugetsu",
+    Title = "Lunar Hub | Project Mugetsu",
     Style = 2,
     SizeX = 300,
     SizeY = 350,
