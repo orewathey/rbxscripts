@@ -126,6 +126,16 @@ local ii = X.Dropdown({
     Options = NPCS
 })
 
+X.Slider({
+    Text = "Distância de Farm",
+    Callback = function(Value)
+        print("Test")
+    end,
+    Min = 1,
+    Max = 10,
+    Precision = 1
+})
+
 X.Dropdown({
     Text = "Selecionar Direção",
     Callback = function(Value)
