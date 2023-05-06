@@ -125,7 +125,7 @@ local ii = X.Dropdown({
 })
 
 X.Slider({
-    Text = "Selecionar Mob",
+    Text = "Distância de Farm",
     Callback = function(Value)
         getgenv().mobname = Value
     end,
