@@ -35,15 +35,6 @@ local X = UI.New({
     Title = "Principal"
 })
 
-local Y = UI.New({
-    Title = "Misc"
-})
-
-local Z = UI.New({
-    Title = "Créditos"
-})
-
-
 X.Toggle({
     Text = "Auto Meditar",
     Callback = function(Value)
