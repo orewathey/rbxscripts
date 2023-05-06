@@ -65,7 +65,7 @@ X.Toggle({
 					local prompt = v:FindFirstChild("Eat_Part")
 					if prompt and prompt:IsA("ProximityPrompt") then
 						fireproximityprompt(prompt)
-						task.wait(1)
+						task.wait(0.1)
 					end
 				end
 		end)
