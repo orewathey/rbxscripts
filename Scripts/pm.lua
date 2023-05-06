@@ -29,6 +29,10 @@ local UI = Material.Load({
     }
 })
 
+UI.Banner({
+    Text = "Obrigado por usar Lunar Hub <3"
+})
+
 local X = UI.New({
     Title = "Principal"
 })
@@ -118,6 +122,16 @@ local ii = X.Dropdown({
         getgenv().mobname = Value
     end,
     Options = NPCS
+})
+
+X.Slider({
+    Text = "Selecionar Mob",
+    Callback = function(Value)
+        getgenv().mobname = Value
+    end,
+    Min = 1,
+    Max = 10,
+    Precision = 1
 })
 
 X.Dropdown({
