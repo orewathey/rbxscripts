@@ -127,7 +127,7 @@ local ii = X.Dropdown({
 X.Slider({
     Text = "Distância de Farm",
     Callback = function(Value)
-        getgenv().mobname = Value
+        print("Test")
     end,
     Min = 1,
     Max = 10,
